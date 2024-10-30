@@ -1,4 +1,30 @@
 Dump of assembler code for function phase_3:
+=> 0x0000555555555671 <+0>:	endbr64 
+   0x0000555555555675 <+4>:	sub    $0x18,%rsp
+   0x0000555555555679 <+8>:	mov    %fs:0x28,%rax
+   0x0000555555555682 <+17>:	mov    %rax,0x8(%rsp)
+   0x0000555555555687 <+22>:	xor    %eax,%eax
+   0x0000555555555689 <+24>:	lea    0x4(%rsp),%rcx
+   0x000055555555568e <+29>:	mov    %rsp,%rdx
+   0x0000555555555691 <+32>:	lea    0x1d6c(%rip),%rsi        # 0x555555557404
+   0x0000555555555698 <+39>:	callq  0x5555555552f0 <__isoc99_sscanf@plt>
+   0x000055555555569d <+44>:	cmp    $0x1,%eax
+   0x00005555555556a0 <+47>:	jle    0x5555555556bc <phase_3+75>
+   0x00005555555556a2 <+49>:	cmpl   $0x7,(%rsp)
+   0x00005555555556a6 <+53>:	ja     0x55555555570d <phase_3+156>
+   0x00005555555556a8 <+55>:	mov    (%rsp),%eax
+   0x00005555555556ab <+58>:	lea    0x1aee(%rip),%rdx        # 0x5555555571a0
+   0x00005555555556b2 <+65>:	movslq (%rdx,%rax,4),%rax
+   0x00005555555556b6 <+69>:	add    %rdx,%rax
+   0x00005555555556b9 <+72>:	notrack jmpq *%rax
+   0x00005555555556bc <+75>:	callq  0x555555555db0 <crash_program>
+   0x00005555555556c1 <+80>:	jmp    0x5555555556a2 <phase_3+49>
+   0x00005555555556c3 <+82>:	mov    $0x214,%eax
+   0x00005555555556c8 <+87>:	cmp    %eax,0x4(%rsp)
+   0x00005555555556cc <+91>:	jne    0x555555555720 <phase_3+175>
+   0x00005555555556ce <+93>:	mov    0x8(%rsp),%rax
+   0x00005555555556d3 <+98>:	xor    %fs:0x28,%rax
+ump of assembler code for function phase_3:
    0x0000555555555671 <+0>:	endbr64 
    0x0000555555555675 <+4>:	sub    $0x18,%rsp
    0x0000555555555679 <+8>:	mov    %fs:0x28,%rax
